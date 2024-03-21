@@ -1,0 +1,152 @@
+/* Import de fontes do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Cores gerais*/
+:root {
+    --corPrimaria: #000000;
+    --corSecundaria: #F6F6F6;
+    --corTerciaria: #ad22fd;
+    --corHover: #ca8cee;
+
+    --fontePrimaria:"Krona One", sans-serif;
+    --fonteSegundaria:"Montserrat",sans-serif;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--corPrimaria);
+    color: var(--corSecundaria);
+    font-family: var(--fonteSegundaria)
+}
+
+/* Links */
+a {
+    color: var(--corTerciaria);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--corHover);
+}
+
+.cabecalho {
+    padding: 4% 0% 0% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalhoMenu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalhoMenuLink {
+    font-family: var(--fonteSegundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--corTerciaria);
+    text-decoration: none;}
+
+.apresentacao {
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:88px;
+}
+
+.apresentacaoConteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacaoConteudoTitulo {
+    font-family: var(--fontePrimaria);
+    font-size: 2.25rem;
+}
+
+.tituloDestaque{
+    color: var(--corTerciaria);
+}
+
+.apresentacaoConteudoTexto {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:var(--corSecundaria);
+}
+
+.apresentacaoRedes {
+    font-family: var(--fontePrimaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacaoDosLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    color: var(--corTerciaria);
+    border: 3px solid var(--corTerciaria);
+}
+.destaqueNome:hover{
+    color:var(--corHover);
+}
+.botoes:hover {
+    background-color:var(--corHover);
+}
+.giuliaimagem{
+    width: 50%;
+}
+
+.rodape {
+    padding: 24px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    background-color: var(--corTerciaria);
+}
+ @media(max-width:1200px){
+
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalhoMenu{
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5% 
+    }
+    .apresentacaoConteudo{
+        width: auto;
+    }
+    .botoes{
+        font-size: 14px; 
+        padding: 8px 16px; 
+
+    }
+ }
