@@ -57,7 +57,7 @@ a:hover {
     padding: 5% 15%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap:88px;
 }
 
@@ -65,7 +65,7 @@ a:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 60px;
 }
 
 .apresentacaoConteudoTitulo {
@@ -128,25 +128,47 @@ a:hover {
     color: #000000;
     background-color: var(--corTerciaria);
 }
- @media(max-width:1200px){
+
+@media(max-width:1200px){
+    .rodape {
+        width: 100%;
+    }
 
     .cabecalho{
         padding: 10%;
     }
     .cabecalhoMenu{
         justify-content: center;
+        gap: 40px;
     }
     
     .apresentacao{
         flex-direction: column-reverse;
-        padding: 5% 
+        padding: 5%;
+        gap: 20px;
     }
     .apresentacaoConteudo{
-        width: auto;
+        width: 100%;
     }
     .botoes{
         font-size: 14px; 
         padding: 8px 16px; 
-
     }
- }
+    .giuliaImagem {
+        width: 100%;
+        max-width: 100%;
+    }
+    .apresentacaoConteudoTitulo {
+        font-size: 2rem;
+    }
+    .apresentacaoConteudoTexto {
+        font-size: 1.25rem;
+    }
+    .apresentacaoConteudoTexto ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .apresentacaoConteudoTexto li {
+        margin-bottom: 15px;
+    }
+}
