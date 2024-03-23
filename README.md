@@ -10,7 +10,7 @@ Este é o meu primeiro projeto de portfólio pessoal, desenvolvido durante o cur
 - Responsividade para adaptar-se a diferentes dispositivos.
 
 ## Como Visualizar
-
+https://lnkd.in/diCeEvNG
 
 ## Autor
 
